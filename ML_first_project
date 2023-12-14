@@ -1,0 +1,40 @@
+**Problem 1:**
+
+Maximum Likelihood Estimation
+
+Consider a set of independent and identically distributed (iid) normally distributed data points X1, ..., Xn.
+
+1. (a) Store the data in an array.
+(b) Calculate the mean and variance of the array based on the theoretical estimates of the mean and variance.
+(c) Plot the normal density function with the calculated mean and variance.
+(d) Enter the data point Xnew = -1. Where does this point lie in the normal distribution plot? (You can first calculate the density by this data point.)
+(e) (Law of Large Numbers.) Generate 1000 random samples from this density function. Calculate the mean of these samples. What conclusion can be drawn from the mean obtained?
+
+**Problem 2:**
+
+Principal Component Analysis (PCA)
+
+Consider the iris dataset, which is available in the scikit-learn library. This dataset includes 5 features: sepal length, sepal width, petal length, petal width, and species.
+
+1. (a) Create a new dataset that includes only the sepal length and sepal width features.
+(b) Plot the sepal length and sepal width features in two-dimensional coordinates.
+(c) Calculate the mean and variance of each feature.
+(d) Calculate the covariance matrix of the data.
+(e) Using the IQR rule, remove outliers from the data. Recalculate the covariance matrix.
+(f) Calculate the Pearson correlation coefficient for each pair of features. Compare your results with the results of the `df.corr(method='pearson')` function.
+(g) Using the covariance matrix obtained in part (d), reduce the dimensionality of the data by 1, while preserving 95% of the information. Compare your results with example 7.5 of the book.
+
+**Problem 3:**
+
+Kernel Principal Component Analysis (KPCA)
+
+Problem:
+
+From the iris dataset, exclude the fifth feature (which is the species).
+
+Instructions:
+
+(a) Store the four numerical features from the iris dataset.
+(b) Obtain the kernel matrix for this dataset using the quadratic kernel.
+(c) Obtain the centered kernel matrix.
+(d) Run the KPCA algorithm on the centered kernel matrix. With 90% of the total variance preserved, how many features are needed?
